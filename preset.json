@@ -1,0 +1,49 @@
+{
+  "useTaobaoRegistry": false,
+  "useConfigFiles": true,
+  "router": true,
+  "vuex": true,
+  "plugins": {
+    "@babel/preset-env": {
+      "version": "7.14.0"
+    },
+    "@vue/cli-plugin-babel": {
+      "version": "4.5.12"
+    },
+    "@vue/cli-plugin-typescript": {
+      "classComponent": true,
+      "useTsWithBabel": true
+    },
+    "@vue/cli-plugin-pwa": {},
+    "@vue/cli-plugin-router": {
+      "historyMode": false,
+      "version": "4.5.12"
+    },
+    "@vue/cli-plugin-vuex": {},
+    "@vue/cli-plugin-eslint": {
+      "version": "4.5.12",
+      "config": "standard",
+      "lintOn": [
+        "save"
+      ]
+    }
+  },
+  "configs": {
+    "eslintConfig": {
+      "rules": {
+        "camelcase": "off",
+        "@typescript-eslint/camelcase": [0, {
+          "properties": "always"
+        }],
+        "@typescript-eslint/no-empty-function": "off",
+        "prefer-const": "off",
+        "@typescript-eslint/no-this-alias": "off",
+        "object-curly-spacing": "off",
+        "dot-notation": "off",
+        "vue/return-in-computed-property": "off",
+        "@typescript-eslint/no-var-requires": "off"
+      }
+    }
+  },
+  "cssPreprocessor": "node-sass"
+}
